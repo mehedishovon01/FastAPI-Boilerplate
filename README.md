@@ -25,8 +25,8 @@ To use this project on your own machine, follow these steps.
 
 ### Clone repository from GitHub
 ```
-git clone https://github.com/yourusername/fastapi-auth-boilerplate.git
-cd fastapi-auth-boilerplate
+git clone https://github.com/mehedishovon01/FastAPI-Boilerplate.git
+cd FastAPI-Boilerplate
 ```
 
 ### Create a virtual environment
