@@ -1,0 +1,116 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask/FastAPI specific
+instance/
+.webassets-cache
+
+# Alembic
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Environments
+.env
+*.env
+
+# Docker
+*.pid
+*.seed
+*.log
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Coverage
+.coverage
+.pytest_cache/
+.pyre/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# GitHub
+*.swp
+*~
+
+# Database
+*.sqlite3
+*.db
+
+# Others
+__pypackages__/
