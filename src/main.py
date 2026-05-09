@@ -1,12 +1,16 @@
-from fastapi import FastAPI
-from src.routers import auth, users
+"""ASGI entry point: ``uvicorn src.main:app``."""
+from src.core.app import create_app
 from src.core.config import settings
-from src.core.database import engine
-from src.models.user import Base
 
-Base.metadata.create_all(bind=engine)
+app = create_app()
 
-app = FastAPI(title=settings.PROJECT_NAME)
 
-app.include_router(auth.router, prefix="/auth", tags=["auth"])
-app.include_router(users.router, prefix="/users", tags=["users"])
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(
+        "src.main:app",
+        host=settings.HOST,
+        port=settings.PORT,
+        reload=settings.DEBUG,
+    )
