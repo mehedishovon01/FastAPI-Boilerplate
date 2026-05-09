@@ -3,9 +3,11 @@
 A clean, modular, production-ready FastAPI starter with JWT auth, RBAC,
 SQLAlchemy 2.0, Alembic migrations, and a test suite.
 
-> See **[BOILERPLATE.md](./BOILERPLATE.md)** for the full architecture
-> walkthrough — every model, schema, endpoint, dependency, and design
-> decision is documented there.
+> Full documentation lives in `docx/`:
+> &nbsp;&nbsp;• **[Boilerplate overview](./docx/BOILERPLATE.md)**  — what's included, why this rewrite exists.
+> &nbsp;&nbsp;• **[Architecture](./docx/Architecture.md)**          — request lifecycle, project layout, configuration, security, dependencies, recipes, production checklist.
+> &nbsp;&nbsp;• **[Models](./docx/Models.md)**                       — every ORM model, the shared `Base`, persistence helpers, ER diagram, migrations.
+> &nbsp;&nbsp;• **[Schemas & APIs](./docx/Schemas-and-APIs.md)**     — every Pydantic schema, the full HTTP API reference, design recipes (PATCH/PUT/pagination).
 
 ## Features
 
@@ -107,7 +109,11 @@ fastapi-boilerplate/
 ├── alembic.ini
 ├── requirements.txt
 ├── README.md
-└── BOILERPLATE.md          # Detailed architecture & API docs
+└── docx/                   # Documentation
+    ├── BOILERPLATE.md      # Project overview + "what changed"
+    ├── Architecture.md     # Request lifecycle, layout, config, security, ...
+    ├── Models.md           # Every ORM model, persistence helpers, ER diagram
+    └── Schemas-and-APIs.md # Pydantic schemas + full API reference
 ```
 
 ## License
